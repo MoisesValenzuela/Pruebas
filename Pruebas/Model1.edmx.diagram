@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bc5c1bb95495493ebd30e50ad2d8b1dc" Name="Diagram1">
+        <EntityTypeShape EntityType="PruebaModel.Activos" Width="1.5" PointX="5.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaModel.Modulo" Width="1.5" PointX="5.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaModel.Opcion" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaModel.Permiso" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaModel.RolUsuario" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PruebaModel.Usuario" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <AssociationConnector Association="PruebaModel.FK_Permiso_Opcion" ManuallyRouted="false" />
+        <AssociationConnector Association="PruebaModel.FK_Permiso_RolUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="PruebaModel.FK_Usuario_RolUsuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

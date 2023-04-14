@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <!--Primera Fila-->
+            <td width="20%">
+                <!--Columna Izquierda-->
+            </td>
+            <td width="40%">
+                <!--Columna Central-->
+                <table align="center">
+                    <tr><td align="center"><b><font SIZE="3">SECRETARIA DE COMUNICACIONES Y TRANSPORTES</font></b></td></tr>
+                    <tr><td align="center"><font SIZE="2">DEPARTAMENTO DE RECURSOS MATERIALES</font></td></tr>
+                    <tr><td align="center"><b><font SIZE="1">MOBILIARIO Y EQUIPO</font></b></td></tr>
+                </table>
+            </td>
+            <td width="20%">
+                <!--Columna Derecha-->
+                <table>
+                    <tr height="45"></tr>
+                    <tr><td align="left"><font SIZE="2">Respaldo No: @NoRes</font></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <!--Siguiente Fila-->
+            <td width="20%">
+                <!--Columna Izquierda-->
+                <table width="100%">
+                    <tr>
+                        <td align="left"><font SIZE="2">Fecha: @Fecha</font></td>
+                    </tr>
+                    <tr><td align="left"><font SIZE="2">Direccion Subdireccion Administrativa</font></td></tr>
+                    <tr><td align="left"><font SIZE="2">Departamento de Rec.Materiales</font></td></tr>
+                    <tr><td align="left"><font SIZE="2">Oficina: @Oficina</font></td></tr>
+                    <tr><td align="left"><font SIZE="2">Dependencia Foranea: @Dependencia</font></td></tr>
+                </table>
+            </td>
+            <td width="40%">
+                <!--Columna Central-->
+            </td>
+            <td width="20%">
+                <!--Columna Derecha-->
+                <table>
+                    <tr><td align="center"><b><font SIZE="3">Nombre del Empleado</font></b></td></tr>
+                    <tr><td align="left"><font SIZE="2">1er Apellido: @1apellido</font></td></tr>
+                    <tr><td align="left"><font SIZE="2">2do Apellido: @2apellido</font></td></tr>
+                    <tr><td align="left"><font SIZE="2">Nombre(s): @nombre</font></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr height="20"></tr>
+        <tr>
+            <td colspan="3">
+                <table border width="100%">
+                    <thead style="background-color:#D8D8D8">
+                        <tr>
+                            <th width="30%">Codigo</th>
+                            <th width="40%">Descripcion</th>
+                            <th width="10%">Cant.</th>
+                            <th width="10%">Unidad</th>
+                            <th width="10%">Precio</th>
+                            <th width="15%">Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <!--<th><font SIZE="2">09 646 I450400228 055 1970 26 00001</font></th>
+                            <th><font SIZE="2">MESA DE MADERA DE COLOR CAFE DE CENTRO</font></th>
+                            <th><font SIZE="2">1</font></th>
+                            <th><font SIZE="2">Unidad</font></th>
+                            <th><font SIZE="2">0.18</font></th>
+                            <th><font SIZE="2">0.18</font></th>-->
+                            @Filas
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align="right">Total:</td>
+                            <td>@Total</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%">
+        <tr>
+            <td width="50%">Encargado del Inventario:</td>
+            <td width="30%">Auxiliar Responsable:</td>
+        </tr>
+        <tr>
+            <td>C.CARLOS M.BALBASTRO QUINTANAR</td>
+            <td width="50%">@nombre @1apellido @2apellido</td>
+        </tr>
+    </table>
+    <b>NOTA:En caso de renuncia licenica o cambio de adscripción, sirvase hacer la entrega del equipo a su cargo a fin de evitar responsabilidad posterior en efectivo.</b>
+</body>
+</html>
