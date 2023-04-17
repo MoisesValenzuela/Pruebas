@@ -10,11 +10,14 @@
 namespace Pruebas
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Modulo
+    public partial class SP_MOSTRARTABLAACTIVOS_Result
     {
-        public int IdModulo { get; set; }
-        public string ModuloNombre { get; set; }
+        public string NoControlInv { get; set; }
+        public string Descripcion { get; set; }
+        public decimal ImporteIVA { get; set; }
+        public string Cambios { get; set; }
+        public string Monitoreo { get; set; }
+        public string RFC { get; set; }
     }
 }

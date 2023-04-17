@@ -71,6 +71,18 @@ namespace Pruebas
             altarol.Show();
         }
 
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VisualizacionActivosFrm visactivosfijos = new VisualizacionActivosFrm();
+            visactivosfijos.Show();
+        }
+
+        private void cambiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarActivosFrm modificarActivos = new ModificarActivosFrm();
+            modificarActivos.Show();
+        }
+
         private void resguardosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResguardosFrm resguardo = new ResguardosFrm();

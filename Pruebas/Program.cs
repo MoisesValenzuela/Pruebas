@@ -16,7 +16,7 @@ namespace Pruebas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ResguardosFrm());
+            Application.Run(new MenuFrm());
         }
     }
 }

@@ -81,6 +81,7 @@
             this.listarToolStripMenuItem.Size = new System.Drawing.Size(229, 32);
             this.listarToolStripMenuItem.Tag = "1";
             this.listarToolStripMenuItem.Text = "Listar Activos";
+            this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
             // altaToolStripMenuItem
             // 
@@ -102,6 +103,7 @@
             this.cambiosToolStripMenuItem.Size = new System.Drawing.Size(229, 32);
             this.cambiosToolStripMenuItem.Tag = "4";
             this.cambiosToolStripMenuItem.Text = "Cambios Activos";
+            this.cambiosToolStripMenuItem.Click += new System.EventHandler(this.cambiosToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
