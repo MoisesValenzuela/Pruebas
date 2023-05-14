@@ -22,6 +22,25 @@ namespace Pruebas
         private void VisualizacionActivosFrm_Load(object sender, EventArgs e)
         {
             dgvActivos.DataSource = activos.MostrarActivos();
+
+            cbxCampos.DataSource = activos.ConsultarCampos();
+
+            cbxTipoDatos.DataSource = activos.ConsultarTipos();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dgvActivos.DataSource = activos.Busqueda(txtBusqueda.Text,cbxCampos.Text,cbxTipoDatos.Text);
+        }
+
+        private void cbxCampos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbxTipoDatos.SelectedIndex = cbxCampos.SelectedIndex;   
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            dgvActivos.DataSource = activos.MostrarActivos();
         }
     }
 }
