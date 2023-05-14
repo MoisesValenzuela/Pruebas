@@ -83,6 +83,18 @@ namespace Pruebas
             modificarActivos.Show();
         }
 
+        private void bajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarActivos eliminarActivos = new EliminarActivos();
+            eliminarActivos.Show();
+        }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarActivosManual agregarActivosManual = new AgregarActivosManual();
+            agregarActivosManual.Show();
+        }
+
         private void resguardosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResguardosFrm resguardo = new ResguardosFrm();

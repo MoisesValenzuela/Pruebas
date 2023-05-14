@@ -47,6 +47,8 @@
             this.altaRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiosRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +87,9 @@
             // 
             // altaToolStripMenuItem
             // 
+            this.altaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manualToolStripMenuItem,
+            this.excelToolStripMenuItem});
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
             this.altaToolStripMenuItem.Size = new System.Drawing.Size(229, 32);
             this.altaToolStripMenuItem.Tag = "2";
@@ -96,6 +101,7 @@
             this.bajaToolStripMenuItem.Size = new System.Drawing.Size(229, 32);
             this.bajaToolStripMenuItem.Tag = "3";
             this.bajaToolStripMenuItem.Text = "Baja Activos";
+            this.bajaToolStripMenuItem.Click += new System.EventHandler(this.bajaToolStripMenuItem_Click);
             // 
             // cambiosToolStripMenuItem
             // 
@@ -201,6 +207,19 @@
             this.bitacoraToolStripMenuItem.Tag = "13";
             this.bitacoraToolStripMenuItem.Text = "Bitacora";
             // 
+            // manualToolStripMenuItem
+            // 
+            this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
+            this.manualToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
+            this.manualToolStripMenuItem.Text = "Manual";
+            this.manualToolStripMenuItem.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
+            // 
+            // excelToolStripMenuItem
+            // 
+            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
+            this.excelToolStripMenuItem.Text = "Excel";
+            // 
             // MenuFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,5 +258,7 @@
         private System.Windows.Forms.ToolStripMenuItem altaRolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cambiosRolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bitacoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
     }
 }

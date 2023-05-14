@@ -66,7 +66,19 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ActivosFijos.cs" />
+    <Compile Include="AgregarActivosManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarActivosManual.Designer.cs">
+      <DependentUpon>AgregarActivosManual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="EliminarActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarActivos.Designer.cs">
+      <DependentUpon>EliminarActivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,12 @@
     <Compile Include="VisualizacionActivosFrm.Designer.cs">
       <DependentUpon>VisualizacionActivosFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AgregarActivosManual.resx">
+      <DependentUpon>AgregarActivosManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarActivos.resx">
+      <DependentUpon>EliminarActivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginFrm.resx">
       <DependentUpon>LoginFrm.cs</DependentUpon>
     </EmbeddedResource>

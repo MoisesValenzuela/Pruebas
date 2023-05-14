@@ -38,6 +38,25 @@ namespace Pruebas
             }
         }
 
+        public void Eliminar(string noControl)
+        {
+            DialogResult resultado = MessageBox.Show("¿Esta seguro que desea eliminar el registro?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                string consulta = "DELETE FROM Activos WHERE NoControlInv='" + noControl + "'";
+
+                SqlCommand comando = new SqlCommand(consulta, cn.LeerCadena());
+                int cant = comando.ExecuteNonQuery();
+
+                if (cant > 0)
+                {
+                    MessageBox.Show("Registro Eliminado");
+                }
+            }
+
+        }
+
         public DataTable Busqueda(string busqueda, string campo, string tipo)
         {
             string consulta = "";
@@ -60,6 +79,33 @@ namespace Pruebas
             adapter.Fill(dt);
 
             return dt;
+        }
+
+        public void AgregarManual(string noControl, string descripcion, string importe, string cambios, string monitoreo, string rfc)
+        {
+            if (noControl.Length > 0)
+            {
+                decimal importedecimal = Decimal.Parse(importe);
+
+                string consulta = "INSERT INTO Activos (NoControlInv,Descripcion,ImporteIVA,Cambios,Monitoreo,RFC) VALUES ('" + noControl + "','" + descripcion + "'," + importedecimal + ",'" + cambios + "','" + monitoreo + "','" + rfc + "')";
+
+                SqlCommand comando = new SqlCommand(consulta, cn.LeerCadena());
+                int cant = comando.ExecuteNonQuery();
+
+                if (cant > 0)
+                {
+                    MessageBox.Show("Registro Agregado");
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo agregar el registro");
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Ingresa un número de control valido");
+            }
+
         }
 
         public List<string> ConsultarCampos()
